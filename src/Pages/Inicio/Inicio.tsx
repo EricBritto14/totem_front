@@ -4,8 +4,10 @@ import OpcoesHomes from "../../Components/OpcoesHome/OpcoesHome";
 
 const Home: React.FC = () => {
     return(
-        <section className="ml-[27%] flex flex-col w-fit h-screen p-36 gap-12">
-                <div className="flex flex-row gap-32 mt-3">
+        // className="ml-[27%] flex flex-col w-fit h-screen p-36 gap-12
+        <section>
+                <div>
+                    <div className="flex flex-row gap-32 mt-3">
                             <OpcoesHomes
                             title="oi"
                             text="oi"
@@ -17,20 +19,22 @@ const Home: React.FC = () => {
                             text="oi"
                             imgPath="src/assets/react.svg"
                             />
+                    </div>
+                    
+                    <div className="flex flex-rol gap-32 mt-7">
+                            <OpcoesHomes
+                            title="oi"
+                            text="oi"
+                            imgPath="src/assets/react.svg"
+                            />
+
+                            <OpcoesHomes
+                            title="oi"
+                            text="oi"
+                            imgPath="src/assets/react.svg"
+                            />
+                    </div>
                 </div>
-                        <div className="flex flex-rol gap-32 mt-7">
-                            <OpcoesHomes
-                            title="oi"
-                            text="oi"
-                            imgPath="src/assets/react.svg"
-                            />
-
-                            <OpcoesHomes
-                            title="oi"
-                            text="oi"
-                            imgPath="src/assets/react.svg"
-                            />
-                        </div>
         </section>
 
         

@@ -1,5 +1,5 @@
 import React from "react";
-import ButtonSair from "../ButtonSair/ButtonSair";
+import ButtonSair from "../Button/Button";
 
 const Menu: React.FC = () =>{
     return(

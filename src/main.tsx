@@ -5,17 +5,15 @@ import App from './App.tsx'
 import { BrowserRouter } from 'react-router-dom'
 import Header from './Components/Header/Header.tsx';
 import Menu from './Components/Menu/Menu.tsx';
+import Layout from './Components/Layout/Layout.tsx';
 
-const showHeader = location.pathname !== "/login"
-const showMenu = location.pathname !== "/login"
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
- 
   <React.StrictMode>
     <BrowserRouter>
-        {showHeader && <Header/>}
-        {showMenu && <Menu/>}
+      <Layout>
         <App />
+      </Layout>
     </BrowserRouter>
   </React.StrictMode>,
 )

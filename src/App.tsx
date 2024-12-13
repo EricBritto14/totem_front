@@ -5,6 +5,7 @@ import './index.css'
 import Filas from "./Pages/Filas/Filas";
 import Usuarios from "./Pages/Usuarios/Usuarios";
 import Publicidade from "./Pages/Publicidade/Publicidade";
+import Login from "./Pages/Login/Login";
 
 const App = () => {
   return (
@@ -13,6 +14,8 @@ const App = () => {
             <Route path="/filas" element={<Filas/>} />
             <Route path="/usuarios" element={<Usuarios/>} />
             <Route path="/publicidade" element={<Publicidade/>} />
+            <Route path="/login" element={<Login/>} />
+
         </Routes>
         
   );

@@ -1,12 +1,12 @@
 import React from "react";
 
-interface ButtonSair{
-    onClick?: () => void
-    title?: string
+interface Button{
+    onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+    title: string
     className?: string
 }
 
-const ButtonSair: React.FC<ButtonSair> = ({onClick, title, className}) =>{
+const Button: React.FC<Button> = ({onClick, title, className}) =>{
     return(
         <div className={`${className}`}>
             <button onClick={onClick}>
@@ -16,4 +16,4 @@ const ButtonSair: React.FC<ButtonSair> = ({onClick, title, className}) =>{
     )
 }
 
-export default ButtonSair
+export default Button
